@@ -1,6 +1,6 @@
 window.onload = function() {
   const sf = document.getElementById("search-field")
-
+  sf.value="";
   const results = document.getElementById("result-list");
 
   sf.addEventListener("keyup", function(event) {
@@ -11,7 +11,8 @@ window.onload = function() {
           .then(response => response.json())
           .then((data) => {
             data[1].forEach(function(elem){
-              const item = `<li>${elem}</li>`;
+              const elemIndex = data[1].indexOf(elem)
+              const item = `<li><a href="${data[3][elemIndex]}" target="_blank">${elem}</a></li>`;
               results.insertAdjacentHTML("beforeend", item);
             });
           });

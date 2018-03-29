@@ -1,0 +1,57 @@
+body{
+  background-color: rgb(91,120,147);
+  color: #eaeaee;
+}
+
+.container{
+  margin-top: 5vh;
+}
+
+#random-button{
+  margin-top: 3em;
+}
+
+#button{
+  width: 100%;
+  border: none;
+  padding:4px 0;
+  border-radius: 3px;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+#button:hover{
+  background-color: rgba(240,240,240,0.9);
+  cursor: pointer;
+  box-shadow: none;
+}
+
+#field{
+  margin-top: 3em;
+}
+
+#field input{
+  width:100%;
+}
+
+li{
+  background-color: rgba(240,240,240,0.1);
+  opacity: 0.9;
+  margin-top:1em;
+  border-radius:3px;
+  transition: padding 0.2s ease;
+  padding:8px;
+}
+
+ul a{
+  color:inherit;
+  display: block;
+}
+
+a:hover{
+  text-decoration: none;
+  color:inherit;
+}
+
+li:hover{
+  padding:10px;
+  background-color: rgba(240,240,240,0.3);
+}

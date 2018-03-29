@@ -14,12 +14,17 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-md-6 mx-auto">
-          <h1>Look for wikipedia entries</h1>
-          <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><button class = "btn btn-deafult">Random wikipedia entry</button></a>
-          <br>
-          <input autofocus="" id="search-field" type="text" placeholder="Search for wikipedia entry..">
+          <div class="text-center">
+            <h1>Search for wikipedia entries</h1>
+          </div>
+          <div id="random-button">
+            <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><button id="button">Random wikipedia entry</button></a>
+          </div>
+          <div id="field">
+            <input autofocus="" id="search-field" type="text" placeholder="Search for wikipedia entry..">
+          </div>
           <div id="results">
-            <ul id="result-list">
+            <ul class="list-unstyled" id="result-list">
 
             </ul>
           </div>

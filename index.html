@@ -13,23 +13,68 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-md-6 mx-auto">
+        <div class="col-xs-12 col-md-8 mx-auto">
           <div class="text-center">
             <h1>Search for wikipedia entries</h1>
           </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-6 mx-auto">
+          <form id="language-select">
+            <span>Select language: </span>
+            <div ;" class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="languages" id="eng" value="en" checked>
+              <label class="form-check-label" for="eng">
+                ENG
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="languages" id="fr" value="fr">
+              <label class="form-check-label" for="fr">
+                FRA
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="languages" id="es" value="es">
+              <label class="form-check-label" for="es">
+                ESP
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="languages" id="de" value="de">
+              <label class="form-check-label" for="de">
+                GER
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-6 mx-auto">
           <div id="random-button">
             <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><button id="button">Random wikipedia entry</button></a>
           </div>
-
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-6 mx-auto">
           <div id="field">
             <input autofocus="" id="search-field" type="text" placeholder="Search for wikipedia entry..">
           </div>
-
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-8 mx-auto">
           <div id="results">
             <ul class="list-unstyled" id="result-list">
 
             </ul>
           </div>
+        </div>
+      </div>
+
+
         </div>
       </div>
     </div>

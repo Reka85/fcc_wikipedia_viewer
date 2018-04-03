@@ -9,7 +9,7 @@ body{
 }
 
 #random-button{
-  margin-top: 3em;
+  margin-top: 2.5em;
 }
 
 #button{
@@ -64,4 +64,22 @@ li:hover{
 li p{
   font-weight: 300;
   font-size:0.9em;
+}
+ /*language selector*/
+input[type="radio"]{
+  visibility:hidden;
+}
+
+label {
+  cursor: pointer;
+}
+input:checked + label {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+#language-select{
+  margin-top: 7em;
+  display:flex;
+  justify-content: space-between;
 }

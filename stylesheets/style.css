@@ -1,6 +1,7 @@
 body{
   background-color: rgb(91,120,147);
-  color: #eaeaee;
+  color: rgb(238,238,238);
+  font-family: 'Open Sans', sans-serif;
 }
 
 .container{
@@ -17,11 +18,13 @@ body{
   padding:4px 0;
   border-radius: 3px;
   box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: rgba(240,240,240,0.7);
 }
 #button:hover{
   background-color: rgba(240,240,240,0.9);
   cursor: pointer;
   box-shadow: none;
+  padding-top: 6px 0;
 }
 
 #field{
@@ -38,7 +41,7 @@ li{
   margin-top:1em;
   border-radius:3px;
   transition: padding 0.2s ease;
-  padding:8px;
+  padding:8px 12px 4px 12px;
 }
 
 ul a{
@@ -52,6 +55,13 @@ a:hover{
 }
 
 li:hover{
-  padding:10px;
-  background-color: rgba(240,240,240,0.3);
+  padding-bottom: 6px;
+  padding-top:10px;
+  background-color: rgba(240,240,240,0.2);
+}
+
+
+li p{
+  font-weight: 300;
+  font-size:0.9em;
 }

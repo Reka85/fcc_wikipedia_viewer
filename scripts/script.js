@@ -17,7 +17,7 @@ window.onload = function() {
     event.preventDefault();
     if (event.keyCode === 13) {
       results.innerHTML = "";
-      fetch(`https://${languageChosen}.wikipedia.org/w/api.php?&origin=*&action=opensearch&search=${searchField.value}&limit=5`)
+      fetch(`https://${languageChosen}.wikipedia.org/w/api.php?&origin=*&action=opensearch&search=${searchField.value}&limit=8`)
       .then(response => {
         if(!response.ok){
           throw new Error(response.statusText);
@@ -29,8 +29,8 @@ window.onload = function() {
           results.insertAdjacentHTML("afterbegin", `The keyword \"${searchField.value}\" was not found on wikipedia`)
         } else {
           data[1].forEach(function(value, index){
-            const item = `<li><a href="${data[3][index]}" target="_blank">${value}</a>
-                          <p>${data[2][index].substring(0,80)}..</p>
+            const item = `<li><a href="${data[3][index]}" target="_blank">${value}
+                          <span>${data[2][index].substring(0,108)}..</span></a>
                           </li>`;
             results.insertAdjacentHTML("beforeend", item);
           });

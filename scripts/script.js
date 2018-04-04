@@ -30,7 +30,7 @@ window.onload = function() {
         } else {
           data[1].forEach(function(value, index){
             const item = `<li><a href="${data[3][index]}" target="_blank">${value}
-                          <span>${data[2][index].substring(0,108)}..</span></a>
+                          <span>${data[2][index].substring(0,100)}..</span></a>
                           </li>`;
             results.insertAdjacentHTML("beforeend", item);
           });
